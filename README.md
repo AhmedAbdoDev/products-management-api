@@ -25,11 +25,6 @@ It provides basic CRUD operations to create, retrieve, update, and delete produc
 
 ---
 
-## **Live Demo**
-(Not available yet. Replace this section with the live URL if deployed.)
-
----
-
 ## **Prerequisites**
 - Install [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.com/try/download/community).
 - Ensure MongoDB is running locally or set up a MongoDB Atlas cluster.
