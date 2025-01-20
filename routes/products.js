@@ -13,7 +13,6 @@ router.get("/", async (req, res) => {
   }
 });
 router.post("/", async (req, res) => {
-  console.log(req.body);
   try {
     let data = await Products(req.body).save();
     res.status(200).json(data);
@@ -44,7 +43,6 @@ router.put("/:id", async (req, res) => {
     if (!data) return res.status(404).json({ message: "Product not found" });
     res.status(200).json(data);
   } catch (e) {
-    console.log(e);
     res.status(400).json({
       message: "error",
     });
@@ -56,7 +54,6 @@ router.delete("/:id", async (req, res) => {
     if (!data) return res.status(404).json({ message: "Product not found" });
     res.status(200).json({ message: "Product deleted successfully" });
   } catch (e) {
-    console.log(e);
     res.status(500).json({
       message: "error",
     });
