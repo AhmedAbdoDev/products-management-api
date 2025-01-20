@@ -8,10 +8,6 @@ require("dotenv").config();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.json({ message: "works" });
-});
-
 require("./Database/connect");
 let products = require("./routes/products");
 app.use("/api/products", products);
