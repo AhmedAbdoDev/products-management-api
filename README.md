@@ -58,7 +58,7 @@ It provides basic CRUD operations to create, retrieve, update, and delete produc
    ```
 
 5. **Access the API**:
-   - Base URL: `http://localhost:3001  /api/products`
+   - Base URL: `http://localhost:3001/api/products`
 
 ---
 
